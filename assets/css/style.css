@@ -82,7 +82,8 @@ header h1 {
     flex-direction: column;
 }
 
-.formulario .formulario-titulo , .formulario .formulario-botao {
+.formulario .formulario-titulo ,
+.formulario .formulario-botao {
     line-height: 22px;
     font-weight: 400;
     font-size: 14px;
@@ -99,6 +100,7 @@ header h1 {
     padding-left: 10px;
 }
 
+/* BOTAO DO FORMULARIO */
 .formulario .formulario-botao {
     border: hidden;
     height: 32px;
@@ -107,7 +109,87 @@ header h1 {
     border-radius: 4px;
 }
 
+/* BORDA INFERIOR DO FORMULARIO */
 .container-um {
     padding-bottom: 20px;
     border-bottom: 1px solid #979797;
+}
+
+/* TITULO DE TRANSAÇÕES */
+.container-dois h2 {
+    padding-top: 35px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* TABELA */
+.tabela {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+/* BORDAS DA TABELA */
+.tabela .tabela-conteudo ,
+.tabela .tabela-conteudo-total {
+    display: flex;
+    width: 100%;
+    padding-left: 5px;
+    border-bottom: 1px solid #979797;
+}
+
+.tabela .tabela-conteudo-total {
+    border-bottom: 0px;
+    border-top: 1px solid #979797;
+    margin-top: 2px;
+}
+
+/* TEXTOS DA TABELA */
+.tabela-conteudo-titulo-valor {
+    text-align: center;
+    margin-left: 35%;
+    width: 49%;
+}
+
+.tabela-conteudo-valor {
+    width: 49%;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.tabela-conteudo-mercadoria ,
+.tabela-conteudo-titulo-mercadoria {
+    width: 49%;
+    padding-left: 10px;
+}
+
+.tabela-conteudo-operador ,
+.tabela-conteudo-titulo-operador {
+    width: 2%;
+}
+
+.tabela-conteudo-titulo-mercadoria,
+.tabela-conteudo-titulo-valor,
+.tabela-conteudo-total {
+    font-weight: 700;
+}
+
+/* TEXTO LUCRO */
+.tabela-conteudo-valor span {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+/* RODAPE */
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 8px;
+    background-color: #333333;
+    width: 100%;
 }

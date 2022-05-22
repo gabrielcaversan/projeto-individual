@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
+    <!-- CABEÇALHO -->
     <header>
         <div>
             <img src="./assets/img/logo.png" alt="Logo">
@@ -26,28 +27,64 @@
             </div>
         </nav>
     </header>
-<div class="container">
-    <section class="container-um">
-        <form class="formulario">
-            <label class="formulario-titulo" for="transacao">Tipo de transação</label>
-            <select class="formulario-conteudo" name="transacao" id="transacao">
-                <option value="compra">Compra</option>
-                <option value="venda">Venda</option>
-            </select>
 
-            <label class="formulario-titulo" for="mercadoria">Nome da mercadoria</label>
-            <input class="formulario-conteudo" type="text" name="mercadoria" id="mercadoria" placeholder="Input">
+    <div class="container">
+        <!-- FORMULARIO -->
+        <section class="container-um">
+            <form class="formulario">
+                <label class="formulario-titulo" for="transacao">Tipo de transação</label>
+                <select class="formulario-conteudo" name="transacao" id="transacao">
+                    <option value="compra">Compra</option>
+                    <option value="venda">Venda</option>
+                </select>
 
-            <label class="formulario-titulo" for="valor">Valor</label>
-            <input class="formulario-conteudo" type="number" name="valor" id="valor" placeholder="R$ 0,00">
+                <label class="formulario-titulo" for="mercadoria">Nome da mercadoria</label>
+                <input class="formulario-conteudo" type="text" name="mercadoria" id="mercadoria" placeholder="Input">
 
-            <button class="formulario-botao" type="submit">Adicionar transação</button>
-        </form>
-    </section>
+                <label class="formulario-titulo" for="valor">Valor</label>
+                <input class="formulario-conteudo" type="number" name="valor" id="valor" placeholder="R$ 0,00">
 
-    <section class="container-dois">
+                <button class="formulario-botao" type="submit">Adicionar transação</button>
+            </form>
+        </section>
+        <!-- TABELA -->
+        <section class="container-dois">
+            <h2>Extrato de transações</h2>
+            <div class="tabela">
+                <div class="tabela-conteudo">
+                    <div class="tabela-conteudo-titulo-operador">&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                    <div class="tabela-conteudo-titulo-mercadoria">Mercadoria</div>
+                    <div class="tabela-conteudo-titulo-valor">Valor</div>
+                </div>
 
-    </section>
-</div>
+                <div class="tabela-conteudo">
+                    <div class="tabela-conteudo-operador">+</div>
+                    <div class="tabela-conteudo-mercadoria">Lorem ipsum dolor sit amet consectetur</div>
+                    <div class="tabela-conteudo-valor">R$ 12.999,99</div>
+                </div>
+
+                <div class="tabela-conteudo">
+                    <div class="tabela-conteudo-operador">-</div>
+                    <div class="tabela-conteudo-mercadoria">Quis nostrud exercitation</div>
+                    <div class="tabela-conteudo-valor">R$ 99,99</div>
+                </div>
+
+                <div class="tabela-conteudo">
+                    <div class="tabela-conteudo-operador">+</div>
+                    <div class="tabela-conteudo-mercadoria">Lorem ipsum</div>
+                    <div class="tabela-conteudo-valor">R$ 9,99</div>
+                </div>
+
+                <div class="tabela-conteudo-total">
+                    <div class="tabela-conteudo-operador">&nbsp;</div>
+                    <div class="tabela-conteudo-mercadoria">Total</div>
+                    <div class="tabela-conteudo-valor">R$ 12.909,99 <br> <span>[LUCRO]</span></div>
+                </div>
+            </div>
+    </div>
+    <!-- RODAPÉ -->
+    <footer>
+        <div></div>
+    </footer>
 </body>
 </html>
