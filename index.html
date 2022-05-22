@@ -8,6 +8,45 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    Projeto individual
+    <header>
+        <div>
+            <img src="./assets/img/logo.png" alt="Logo">
+        </div>
+        <h1>
+            Controle Financeiro
+        </h1>
+        <nav class="menu">
+            <div class="menu-bar"></div>
+            <div class="menu-bar"></div>
+            <div class="menu-bar"></div>
+            <div class="menu-lista">
+                <div class="menu-x">X</div>
+                <div class="menu-lista-conteudo">Cadastro de transações</div>
+                <div class="menu-lista-conteudo">Limpar dados</div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <form>
+            <label for="transacao">Tipo de transação</label>
+            <select name="transacao" id="transacao">
+                <option value="compra">Compra</option>
+                <option value="venda">Venda</option>
+            </select>
+
+            <label for="mercadoria">Nome da mercadoria</label>
+            <input type="text" name="mercadoria" id="mercadoria" placeholder="Input">
+
+            <label for="valor">Valor</label>
+            <input type="number" name="valor" id="valor" placeholder="R$ 0,00">
+
+            <button type="submit">Adicionar transação</button>
+        </form>
+    </section>
+
+    <section>
+
+    </section>
 </body>
 </html>
