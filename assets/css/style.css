@@ -5,6 +5,7 @@
     font-family: 'Lato', sans-serif;
 }
 
+/* CABEÇALHO */
 header {
     display: flex;
     justify-content: space-between;
@@ -13,23 +14,29 @@ header {
     background-color: #E0E0E0;
 }
 
+/* IMAGEM DO CABEÇALHO */
 header img {
     width: 30px;
 }
 
+/* TITULO DO CABEÇALHO */
 header h1 {
     font-size: 20px;
     line-height: 24px;
     font-weight: 600;
+    color: #333333
 }
 
+/* ICONE DO MENU */
 .menu-bar {
     height: 2px;
     width: 18px;
-    background-color: black;
+    background-color: #333333;
     margin-top: 3px;
 
 }
+
+/* CONTEUDO DO MENU OCULTO */
 .menu-lista {
     background-color: #333333;
     color: white;
@@ -54,11 +61,53 @@ header h1 {
     background-color: #C4C4C4;
 }
 
+/* X DO MENU */
 .menu-x {
     text-align: left;
     padding: 15px;
 }
 
+/* COMANDO PARA O MENU APARECER */
 .menu:hover .menu-lista {
     right: 0;
+}
+
+/* FORMULARIO */
+.container {
+    margin: 20px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario .formulario-titulo , .formulario .formulario-botao {
+    line-height: 22px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #333333;
+}
+
+.formulario-conteudo {
+    box-sizing: border-box;
+    height: 32px;
+    border: 1px solid #979797;
+    border-radius: 4px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+
+.formulario .formulario-botao {
+    border: hidden;
+    height: 32px;
+    background-color: #333333;
+    color: #FFFFFF;
+    border-radius: 4px;
+}
+
+.container-um {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #979797;
 }
