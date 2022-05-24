@@ -5,6 +5,15 @@
     font-family: 'Lato', sans-serif;
 }
 
+html , body {
+    height: 100%;
+}
+
+.full-content {
+    min-height: 100%;
+    position: relative;
+}
+
 /* CABEÇALHO */
 header {
     display: flex;
@@ -179,7 +188,19 @@ header h1 {
 }
 
 /* TEXTO LUCRO */
-.tabela-conteudo-valor span {
+.tabela-conteudo-valor-total {
+    width: 49%;
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+}
+
+.tabela-conteudo-valor-total span {
+    display: flex;
+    justify-content: right;
+    margin-top: -10px;
     font-size: 10px;
     font-weight: 400;
     line-height: 22px;
@@ -187,7 +208,7 @@ header h1 {
 
 /* RODAPE */
 footer {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     height: 8px;
     background-color: #333333;
